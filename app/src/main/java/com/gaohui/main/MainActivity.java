@@ -3,12 +3,13 @@ package com.gaohui.main;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.tabs.TabLayout;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -181,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
     class IndexPagerAdapter extends FragmentPagerAdapter {
         private List<String> titleList;
 
-        public IndexPagerAdapter(FragmentManager fm,List<String> titleList,List<Fragment> fragmentList) {
+        public IndexPagerAdapter(FragmentManager fm, List<String> titleList, List<Fragment> fragmentList) {
             super(fm);
             this.titleList = titleList;
         }
